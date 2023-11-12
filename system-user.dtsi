@@ -4,6 +4,6 @@
 //		/delete-property/ perf-monitor_cci;
 	};
 	axi {
-//		/delete-node/ perf-monitor@fd490000;
+		/delete-node/ perf-monitor@fd490000;
 	};
 };
