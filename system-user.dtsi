@@ -1,0 +1,9 @@
+/include/ "system-conf.dtsi"
+/ {
+	aliases {
+//		/delete-property/ perf-monitor_cci;
+	};
+	axi {
+//		/delete-node/ perf-monitor@fd490000;
+	};
+};
