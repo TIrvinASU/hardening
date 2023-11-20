@@ -5,5 +5,6 @@
 	};
 	axi {
 		/delete-node/ perf-monitor@fd490000;
+		/delete-node/ perf-monitor@ffa00000;
 	};
 };
