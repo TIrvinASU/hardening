@@ -1,3 +1,4 @@
+//test
 /include/ "system-conf.dtsi"
 / {
 	aliases {
