@@ -9,6 +9,5 @@
 		/delete-node/ perf-monitor@fd0b0000;
 		/delete-node/ perf-monitor@ffa10000;
 		/delete-node/ perf-monitor@fd490000;
-		/delete-node/ perf-monitor@ffa00000;
 	};
 };
