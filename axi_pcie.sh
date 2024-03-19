@@ -25,16 +25,14 @@ echo "Ethernet interface eth0 is up."
 # echo "DHCP configuration complete."
 
 # Or, assign a static IP address (Uncomment and fill in with your desired IP configuration)
-# echo "Assigning static IP address..."
-# ifconfig eth0 <your_IP_address> netmask <your_subnet_mask> up
-# echo "Static IP address configured."
+echo "Assigning static IP address..."
+ifconfig eth0 192.168.2.20 netmask 255.255.255.0 up
+echo "Static IP address configured."
 
 # Step 6: Ping Test
-ping -c 4 <destination_IP_address>
+ping -c 4 192.168.2.20
 if [[ $? -eq 0 ]]; then
     echo "Ping successful. Network connectivity verified."
 else
     echo "Ping failed. Check network connectivity."
 fi
-
-# End of script
