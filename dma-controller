@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/mman.h>
+
+//need to get the correct path for dma controllers in lpd
+#define DEVICE_TREE_PATH "/proc/device-tree"
+
+int main() {
+    // Open the device tree file
+    int fd = open(DEVICE_TREE_PATH, O_RDONLY);
+    if (fd < 0) {
+        perror("Failed to open device tree");
+        return 1;
+    }
+
+    lseek(fd, 0, SEEK_SET);
+
+    // Read the device tree into a buffer
+    char buffer[1024 * 1024];
+    ssize_t nbytes = read(fd, buffer, sizeof(buffer));
+    if (nbytes < 0) {
+        perror("Failed to read device tree");
+        close(fd);
+        return 1;
+    }
+
+    // Close the device tree file
+    close(fd);
+
+    // Search for the DMA controller node
+    //there are three of these, will implement with each of the addresses being tested
+    const char *dma_node_name = "/amba/dma@XXXXXXX"; // Replace XXXXXXX with the actual address
+    if (strstr(buffer, dma_node_name) != NULL) {
+        printf("DMA controller node found\n");
+    } else {
+        printf("DMA controller node not found\n");
+    }
+
+    return 0;
+}
