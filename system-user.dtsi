@@ -1,13 +1,21 @@
 /include/ "system-conf.dtsi"
 / {
-	aliases {
-
-	};
-	
 	axi {
-		/delete-node/ perf-monitor@ffa00000;
-		/delete-node/ perf-monitor@fd0b0000;
-		/delete-node/ perf-monitor@ffa10000;
-		/delete-node/ perf-monitor@fd490000;
+		can@ff060000 {
+			status = "okay";
+		};
+		pcie@fd0e0000 {
+			status = "okay";
+		};
+		smmu@fd800000 {
+			status = "okay";
+		};
+		
+		usb1@ff9e0000 {
+			status = "okay";
+			usb@fe300000 {
+				status = "okay";
+			};
+		};
 	};
 };
