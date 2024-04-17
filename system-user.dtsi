@@ -12,10 +12,9 @@
 		};
 		
 		usb1@ff9e0000 {
-			status = "okay";
-			usb@fe300000 {
-				status = "okay";
-			};
+			/delete-node/ usb@fe300000;
 		};
+		
+		/delete-node/ usb1@ff9e0000;
 	};
 };
