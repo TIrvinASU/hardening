@@ -1,13 +1,20 @@
 /include/ "system-conf.dtsi"
 / {
 	aliases{
-
+		/delete-property/ ethernet0; 
 	};
 
 	axi {
-		/delete-node/ ethernet@ff0b0000;
+
 		/delete-node/ ethernet@ff0c0000;
 		/delete-node/ ethernet@ff0d0000;
+                /delete-node/ ethernet@ff0e0000;
+         	/delete-node/ watchdog@ff150000;
+
+	   can@ff060000{
+	   status = "okay";	
+	   };
+           
 	};
 };
 
