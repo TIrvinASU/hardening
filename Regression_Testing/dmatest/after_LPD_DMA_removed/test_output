@@ -1,0 +1,24 @@
+[  471.282805] dmatest: Added 1 threads using dma0chan0
+[  471.339711] dmatest: Added 1 threads using dma1chan0
+[  471.422049] dmatest: Added 1 threads using dma2chan0
+[  471.466408] dmatest: Added 1 threads using dma3chan0
+[  471.542182] dmatest: Added 1 threads using dma4chan0
+[  471.695344] dmatest: Added 1 threads using dma5chan0
+[  471.792607] dmatest: Added 1 threads using dma6chan0
+[  471.899368] dmatest: Added 1 threads using dma7chan0
+[  852.922050] dmatest: Started 1 threads using dma0chan0
+[  852.946504] dmatest: Started 1 threads using dma1chan0
+[  852.949053] dmatest: Started 1 threads using dma2chan0
+[  852.949391] dmatest: Started 1 threads using dma3chan0
+[  852.968438] dmatest: Started 1 threads using dma4chan0
+[  853.047675] dmatest: dma0chan0-copy0: summary 1 tests, 0 failures 968.05 iops 12584 KB/s (0)
+[  853.062249] dmatest: Started 1 threads using dma5chan0
+[  853.062301] dmatest: Started 1 threads using dma6chan0
+[  853.062325] dmatest: Started 1 threads using dma7chan0
+[  853.112566] dmatest: dma3chan0-copy0: summary 1 tests, 0 failures 135.26 iops 1623 KB/s (0)
+[  853.142911] dmatest: dma1chan0-copy0: summary 1 tests, 0 failures 8.01 iops 0 KB/s (0)
+[  853.143610] dmatest: dma2chan0-copy0: summary 1 tests, 0 failures 7.46 iops 44 KB/s (0)
+[  853.144047] dmatest: dma4chan0-copy0: summary 1 tests, 0 failures 7.97 iops 15 KB/s (0)
+[  853.224698] dmatest: dma6chan0-copy0: summary 1 tests, 0 failures 8.41 iops 16 KB/s (0)
+[  853.269757] dmatest: dma5chan0-copy0: summary 1 tests, 0 failures 7.99 iops 103 KB/s (0)
+[  853.273141] dmatest: dma7chan0-copy0: summary 1 tests, 0 failures 8.17 iops 114 KB/s (0)

@@ -1,0 +1,44 @@
+Updated_Device_Matching_Table
+Minimum Device List,Matching Device in PDF
+ams_dev,ams@ffa50000
+apm_fpd_dev,"perf-monitor@fd490000
+perf-monitor@ffa10000"
+axipcie_dev,pcie@fd0e0000
+can0_dev,can@ff060000
+can1_dev,can@ff070000
+cci_dev,cci@fd6e0000
+crf_apb_dev,Device is not present in device tree
+crl_apb_dev,Device is not present in device tree
+ddrc_dev,memory-controller@fd070000
+dpdma_dev,dma-controller@fd4c0000
+dport_dev,display@fd4a0000
+fpd_dma_chan1_dev,dma-controller@fd500000
+fpd_dma_chan2_dev,dma-controller@fd510000
+fpd_dma_chan3_dev,dma-controller@fd520000
+fpd_dma_chan4_dev,dma-controller@fd530000
+fpd_dma_chan5_dev,dma-controller@fd540000
+fpd_dma_chan6_dev,dma-controller@fd550000
+fpd_dma_chan7_dev,dma-controller@fd560000
+fpd_dma_chan8_dev,dma-controller@fd570000
+gem3_dev,ethernet@ff0e0000
+gic_gic400_dev,interrupt-controller@f9010000
+gpio_dev,gpio@ff0a0000
+gpu_dev,gpu@fd4b0000
+i2c0_dev,i2c@ff020000
+i2c1_dev,i2c@ff030000
+ocm_dev,memory-controller@ff960000
+pcie_attrib_dev,pcie@fd0e0000
+pcie_high_dev,Device is not present in device tree
+pmu_dev,pmu
+qspi_dev,spi@ff0f0000
+rtc_dev,rtc@ffa60000
+sd0_dev,mmc@ff160000
+sdl_dev,mmc@ff170000
+serdes_dev,phy@fd400000
+siou_dev,phy@fd400000
+smmu_gpv_dev,smmu@fd800000
+smmu_reg_dev,Device is not present in device tree
+uart0_dev,serial@ff000000
+uart1_dev,serial@ff010000
+usb0_dev,usb0@ff9d0000
+watchdog0_dev,watchdog@fd4d0000

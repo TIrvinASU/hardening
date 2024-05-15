@@ -1,0 +1,37 @@
+These test suites were recommended by ChatGPT-4 out of all test suites as the most relevant to test a DMA controller:
+    
+    Dma_thread_diotest- these tests reproduce a data corruption bug when direct I/O is used, and it occurs due to alignment issues with the buffer being read from to write to the dest file
+    Dio- tests direct I/O
+    Crypto - included because on our hardware board the CSU (Configuration Security Unit) utilizes the LPD DMA channels
+    Ltp-aio-stress- Performs stress testing/benchmarking of AIO under various conditions, including for files opened w/ O_DIRECT
+    Ltp-aiodio.part1 - Ltp-aiodio.part4 - each test functionality related to file operations
+    Smoketest - performs the following general tests (this is /runtest/smoketest contents):
+        access01 access01
+        chdir01 chdir01
+        fork01 fork01
+        time01 time01
+        wait02 wait02
+        write01 write01
+        symlink01 symlink01
+        stat04 symlink01 -T stat04
+        utime01A symlink01 -T utime01
+        rename01A symlink01 -T rename01
+        splice02 splice02 -s 20
+        df01_sh df01.sh
+        shell_test01 echo "SUCCESS" | shell_pipe01.sh
+        ping602 ping02.sh -6
+        macsec02 macsec02.sh
+
+After an investigation into the functionality of each test suite, I did not have confidence in these test suites for various reasons:
+
+    Perform direct I/O, which likely uses a DMA but requires the filesystem being used to support opening a file with O_DIRECT. The filesystem used on our board did not support this, and while an alternative filesystem could be used, it wasn't specified what the final filesystem was that would be used in the product. This ambiguity, in addition to only testing a DMA by proxy, and thus not giving direct insight into the DMA's functionality, did not give enough confidence to utilize these test suites.
+        Dma_thread_diotest
+        Dio
+        Ltp-aiodio.part1 - Ltp-aiodio.part4
+
+    Only test the DMA by proxy and don't give direct insight into DMA functionality, and thus aren't used.
+        Crypto
+        Ltp-aio-stress
+
+    Performs only general tests
+        Smoketest      

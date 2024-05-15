@@ -1,0 +1,14 @@
+/include/ "system-conf.dtsi"
+/ {
+
+axi{
+        /delete-node/ dma-controller@ffa80000;
+        /delete-node/ dma-controller@ffa90000;
+        /delete-node/ dma-controller@ffaa0000;
+        /delete-node/ dma-controller@ffab0000;
+        /delete-node/ dma-controller@ffac0000;
+        /delete-node/ dma-controller@ffad0000;
+        /delete-node/ dma-controller@ffae0000;
+        /delete-node/ dma-controller@ffaf0000;	
+};
+};

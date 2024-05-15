@@ -1,0 +1,32 @@
+[26392.862269] dmatest: Started 1 threads using dma0chan0
+[26392.869557] dmatest: Started 1 threads using dma1chan0
+[26392.923745] dmatest: dma0chan0-copy0: summary 1 tests, 0 failures 893.65 iops 12511 KB/s (0)
+[26392.968296] dmatest: Started 1 threads using dma2chan0
+[26392.968380] dmatest: Started 1 threads using dma3chan0
+[26392.968406] dmatest: Started 1 threads using dma4chan0
+[26392.968429] dmatest: Started 1 threads using dma5chan0
+[26392.968454] dmatest: Started 1 threads using dma6chan0
+[26392.968476] dmatest: Started 1 threads using dma7chan0
+[26392.968501] dmatest: Started 1 threads using dma8chan0
+[26392.968522] dmatest: Started 1 threads using dma9chan0
+[26392.968544] dmatest: Started 1 threads using dma10chan0
+[26392.968567] dmatest: Started 1 threads using dma11chan0
+[26392.968587] dmatest: Started 1 threads using dma12chan0
+[26392.968605] dmatest: Started 1 threads using dma13chan0
+[26392.968629] dmatest: Started 1 threads using dma14chan0
+[26392.968652] dmatest: Started 1 threads using dma15chan0
+[26393.057612] dmatest: dma6chan0-copy0: summary 1 tests, 0 failures 13.24 iops 145 KB/s (0)
+[26393.058268] dmatest: dma4chan0-copy0: summary 1 tests, 0 failures 12.96 iops 38 KB/s (0)
+[26393.060507] dmatest: dma8chan0-copy0: summary 1 tests, 0 failures 12.90 iops 103 KB/s (0)
+[26393.061074] dmatest: dma2chan0-copy0: summary 1 tests, 0 failures 10.91 iops 0 KB/s (0)
+[26393.069496] dmatest: dma11chan0-copy: summary 1 tests, 0 failures 12.20 iops 0 KB/s (0)
+[26393.150618] dmatest: dma7chan0-copy0: summary 1 tests, 0 failures 16.32 iops 16 KB/s (0)
+[26393.165315] dmatest: dma14chan0-copy: summary 1 tests, 0 failures 8.23 iops 57 KB/s (0)
+[26393.165745] dmatest: dma15chan0-copy: summary 1 tests, 0 failures 9.22 iops 110 KB/s (0)
+[26393.166527] dmatest: dma1chan0-copy0: summary 1 tests, 0 failures 3.69 iops 37 KB/s (0)
+[26393.167630] dmatest: dma12chan0-copy: summary 1 tests, 0 failures 11.62 iops 0 KB/s (0)
+[26393.194484] dmatest: dma5chan0-copy0: summary 1 tests, 0 failures 9.09 iops 54 KB/s (0)
+[26393.207294] dmatest: dma9chan0-copy0: summary 1 tests, 0 failures 7.67 iops 107 KB/s (0)
+[26393.264087] dmatest: dma3chan0-copy0: summary 1 tests, 0 failures 6.26 iops 12 KB/s (0)
+[26393.276827] dmatest: dma10chan0-copy: summary 1 tests, 0 failures 6.69 iops 13 KB/s (0)
+[26393.283417] dmatest: dma13chan0-copy: summary 1 tests, 0 failures 6.50 iops 13 KB/s (0)

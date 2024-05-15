@@ -1,0 +1,23 @@
+/include/ "system-conf.dtsi"
+/ {
+
+axi{
+        /delete-node/ dma-controller@ffa80000;
+        /delete-node/ dma-controller@ffa90000;
+        /delete-node/ dma-controller@ffaa0000;
+        /delete-node/ dma-controller@ffab0000;
+        /delete-node/ dma-controller@ffac0000;
+        /delete-node/ dma-controller@ffad0000;
+        /delete-node/ dma-controller@ffae0000;
+        /delete-node/ dma-controller@ffaf0000;	
+	/delete-node/ ethernet@ff0b0000;
+	/delete-node/ ethernet@ff0c0000;
+	/delete-node/ ethernet@ff0d0000;
+	/delete-node/ perf-monitor@ffa00000;
+	/delete-node/ perf-monitor@fd0b0000;
+	/delete-node/ spi@ff040000;
+	/delete-node/ spi@ff050000;
+	/delete-node/ usb1@ff9e0000;
+	/delete-node/ watchdog@ff150000;
+};
+};
